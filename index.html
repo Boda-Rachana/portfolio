@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Boda Rachana</h1>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h2>Hello, I'm <span>Boda Rachana</span></h2>
+            <h3 class="typing-text">
+                <span id="typing"></span>
+            </h3>
+            <p>
+                Information Technology student passionate about
+                Python, SQL and <br> Web Development,
+                with a strong interest in building real-world projects<br>
+                and improving problem-solving skills.
+            </p>
+            <div class="hero-buttons">
+            <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+             View Projects
+            </button>
+            <a href="Rachana_resume_SDE.pdf" download>
+            <button class="resume-btn">Download Resume</button>
+             </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Boda-Rachana" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/boda-rachana-ab64b9362/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:bodarachana1267@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="image/profile.jpg" alt="profile image">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="image/profile.jpg" alt="about image">
+        </div>
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I am an enthusiastic Information Technology student passionate about
+                software development, problem-solving, and building real-world applications.
+                I have a strong interest in Python, SQL, and Web Development, and I enjoy
+                creating responsive and user-friendly projects that improve my practical skills.
+                <br><br>
+
+                I am continuously learning new technologies and improving my knowledge in
+                programming, database management, and modern web technologies.
+                I enjoy working on innovative projects, exploring creative solutions,
+                and growing as a future software engineer.
+                <br><br>
+
+                I believe in consistency, curiosity, and determination.
+                My goal is to contribute to meaningful projects,
+                gain real-world experience, and make a positive impact through technology.
+            </p>
+            <div class="about-tags">
+
+                <span>
+                    <i class="fa-brands fa-python"></i>
+                    Python
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-database"></i>
+                    SQL
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-code"></i>
+                    Web Development
+                </span>
+
+            </div>
+            <!-- STATS -->
+            <div class="about-extra">
+
+                <div class="about-stat"
+                    onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+
+                    <h3>2+</h3>
+                    <p>Projects Completed</p>
+                </div>
+
+                <div class="about-stat" onclick="showInternship()">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+
+                    <h3>1</h3>
+                    <p>Internship</p>
+                </div>
+
+                <div class="about-stat" onclick="showCertificates()">
+
+                    <div class="stat-icon">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+
+                    <h3>3+</h3>
+                    <p>Certifications</p>
+                </div>
+
+            </div>
+            <!-- INTERNSHIP POPUP -->
+            <div class="popup-box" id="internshipBox">
+                <span class="close-btn" onclick="closeInternship()">×</span>
+
+                <h3>Python Programming Internship</h3>
+
+                <p>
+                    Successfully completed a Python Programming Internship at
+                    <strong>InternPe</strong> from
+                    <strong>05-May-2025 to 01-June-2025</strong>.
+                    <br><br>
+
+                    Worked on Python programming concepts, practical problem-solving,
+                    and gained hands-on experience in software development.
+                    <br><br>
+
+                    <strong>Company:</strong> InternPe <br>
+                    <strong>Domain:</strong> Python Programming <br>
+                    <strong>Designation:</strong> Intern
+                </p>
+            </div>
+            <!-- CERTIFICATE POPUP -->
+            <div class="certificates-section" id="certificateBox">
+
+                <h3>My Certifications</h3>
+
+                <div class="certificate-cards">
+
+                    <!-- PYTHON INTERNSHIP -->
+                    <div class="certificate-card">
+                        <h4>Python Programming Internship</h4>
+                        <p>InternPe</p>
+
+                        <div class="certificate-links">
+                            <a href="cerificates/internpe.png" target="_blank">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- SQL -->
+                    <div class="certificate-card">
+                        <h4>SQL Certifications</h4>
+                        <p>Database Management & Queries</p>
+
+                        <div class="certificate-links">
+                            <a href="cerificates/SQL_Basic.pdf" target="_blank">
+                                View Certificate 1
+                            </a>
+
+                            <a href="cerificates/SQL.pdf" target="_blank">
+                                View Certificate 2
+                            </a>
+                        </div>
+                    </div>
+
+                   <!-- JAVASCRIPT -->
+                    <div class="certificate-card">
+                        <h4>JavaScript Certification</h4>
+                        <p>Cisco Networking Academy</p>
+
+                        <div class="certificate-links">
+                            <a href="cerificates/JavaScript.pdf" target="_blank">
+                                View Certificate
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">
+                <i class="fa-brands fa-python skill-icon"></i>
+                <h3>Python</h3>
+                <p>
+                    Strong understanding of Python programming,
+                    problem-solving, and project development.
+                </p>
+                <div class="skill-tools">
+                    <span>OOP</span>
+                    <span>Problem Solving</span>
+                    <span>Projects</span>
+                </div>
+            </div>
+            <div class="skill-card">
+
+                <i class="fa-solid fa-database skill-icon"></i>
+
+                <h3>SQL</h3>
+
+                <p>
+                    Knowledge of database management,
+                    queries, joins, and data handling.
+                </p>
+
+                <div class="skill-tools">
+                    <span>MySQL</span>
+                    <span>Queries</span>
+                    <span>Joins</span>
+                </div>
+
+            </div>
+            <div class="skill-card">
+
+                <i class="fa-solid fa-code skill-icon"></i>
+
+                <h3>Web Development</h3>
+
+                <p>
+                    Building responsive and modern websites
+                    using HTML, CSS, and JavaScript.
+                </p>
+
+                <div class="skill-tools">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div class="project-container">
+            <div class="project-card">
+                <img src="image/project1.jpg" alt="project image">
+                <div class="project-content">
+                    <h3>Computer-aided inspection system to predict the quality characteristics of food Technology</h3>
+                    <p>
+                        A machine learning based system designed to predict
+                        and classify food quality characteristics using
+                        image processing and classification algorithms.
+                        Helps automate food inspection reducing manual effort
+                        and improving accuracy in quality assessment.
+                    </p>
+                    <a href="https://github.com/Boda-Rachana" 
+                        target="_blank" 
+                        class="project-btn">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/project3.jpg" alt="project image">
+                <div class="project-content">
+                    <h3>Enhancing Medicare Fraud Detection with CNN-Transformer-XGBoost and Explainable AI</h3>
+                    <p>
+                        An advanced healthcare fraud detection system
+                        combining CNN, Transformer architecture, XGBoost,
+                        and Explainable AI techniques to identify fraudulent
+                        Medicare claims. Delivers high accuracy with
+                        interpretable results helping healthcare providers
+                        detect and prevent billing fraud effectively.
+                    </p>
+                    <a href="https://github.com/Boda-Rachana" 
+                        target="_blank" 
+                        class="project-btn">
+                        View Project
+                    </a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="image/project2.jpg" alt="project image">
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>
+                        A fully responsive personal portfolio website built
+                        using HTML, CSS, and JavaScript from scratch.
+                        Features smooth navigation, modern card layouts,
+                        hover animations, and a clean professional design
+                        to showcase skills, projects, and contact information.
+                    </p>
+                    <a href="https://github.com/Boda-Rachana" 
+                        target="_blank" 
+                        class="project-btn">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <p>Feel free to reach out for opportunities,
+                collaborations, or just a friendly hello!</p>
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>bodarachana1267@gmail.com</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Hyderabad, India</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <span>LinkedIn Profile</span>
+                    </div>
+                    <div class="availability-box">
+                        <i class="fa-solid fa-circle-check"></i>
+                        Available for internships and entry-level opportunities
+                    </div>
+
+                </div>
+            </div>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button>Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>Designed & Built by <span>Boda Rachana</span></p>
+    <p>© 2026 All Rights Reserved</p>
+</footer>
+</html>
